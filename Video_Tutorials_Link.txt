@@ -1,0 +1,7 @@
+Engg of Big Data Systems
+
+INFO7250 Big Data - Lecture 01- https://bluejeans.com/s/83aEx
+
+Lab2- MapReduce- https://zoom.us/recording/share/m-T5RC4-E_Ba8tdQshPuYbePs3SbD8haCjD89m27eN-wIumekTziMw
+
+For Loop vs ForEach loop in Javascript- https://medium.com/@abustamam/for-loops-vs-foreach-in-javascript-7a977278a39e
