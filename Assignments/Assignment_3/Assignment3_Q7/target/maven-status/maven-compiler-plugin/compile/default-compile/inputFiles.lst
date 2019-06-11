@@ -1,0 +1,9 @@
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/textInputFormat/TextReducer.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/textInputFormat/TextMainMR.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/KeyValueTextInputFormat/KeyMapper.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/textInputFormat/TextMapper.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/KeyValueTextInputFormat/KeyReducer.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/KeyValueTextInputFormat/KeyMainMR.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/sequenceFileInputFormat/SeqReducer.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/sequenceFileInputFormat/SeqMainMR.java
+/home/ankit/NetBeansProjects/Assignment3_Q7/src/main/java/com/hadoop/assignment3_q7/sequenceFileInputFormat/SeqMapper.java
