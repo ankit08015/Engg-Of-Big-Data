@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.assignment3_q7.KeyValueTextInputFormat;
+package com.hadoop.assignment3_q7.FixLengthInputFormat;
 
 import java.io.IOException;
+import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -15,16 +16,12 @@ import org.apache.hadoop.mapreduce.Mapper;
  *
  * @author ankit
  */
-public class KeyMapper extends Mapper<Text, Text, Text, IntWritable> {
+public class FixMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     @Override
-    protected void map(Text key, Text value, Context context) throws IOException, InterruptedException {
+    protected void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException {
        // String val = value.toString();
         //IntWritable v = new IntWritable(Integer.parseInt(val));
-        context.write(key,new IntWritable(1)); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-
-    
-    
+        context.write(value,new IntWritable(1)); //To change body of generated methods, choose Tools | Templates.
+    }    
 }

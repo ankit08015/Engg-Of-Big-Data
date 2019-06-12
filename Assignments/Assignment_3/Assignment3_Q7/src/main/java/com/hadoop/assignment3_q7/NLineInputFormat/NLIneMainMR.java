@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.assignment3_q7.KeyValueTextInputFormat;
+package com.hadoop.assignment3_q7.NLineInputFormat;
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
@@ -12,7 +12,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.NLineInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
@@ -20,15 +20,15 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
  *
  * @author ankit
  */
-public class KeyMainMR {
+public class NLIneMainMR {
     
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
         
         
     Configuration conf = new Configuration();
          // Create a new Job
-     Job job = Job.getInstance(conf,"KeyValueCount");
-     job.setJarByClass(KeyMainMR.class);
+     Job job = Job.getInstance(conf,"wordcountNLine");
+     job.setJarByClass(NLIneMainMR.class);
      
      // Specify various job-specific parameters     
      job.setJobName("myjob");
@@ -38,7 +38,9 @@ public class KeyMainMR {
      FileOutputFormat.setOutputPath(job, new Path(args[1]));
      
      
-     job.setInputFormatClass(KeyValueTextInputFormat.class);
+     job.setInputFormatClass(NLineInputFormat.class);
+     job.getConfiguration().setInt("mapreduce.input.lineinputformat.linespermap", 100);
+     
      job.setOutputFormatClass(TextOutputFormat.class);
      
      job.setMapOutputKeyClass(Text.class);
@@ -47,8 +49,8 @@ public class KeyMainMR {
      
      
      
-     job.setMapperClass(KeyMapper.class);
-     job.setReducerClass(KeyReducer.class);
+     job.setMapperClass(NLineMapper.class);
+     job.setReducerClass(NLineReducer.class);
      
      job.setOutputKeyClass(Text.class);
      job.setOutputValueClass(IntWritable.class);

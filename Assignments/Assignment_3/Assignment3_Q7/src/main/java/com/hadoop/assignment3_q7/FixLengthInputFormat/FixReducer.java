@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.assignment3_q7.KeyValueTextInputFormat;
+package com.hadoop.assignment3_q7.FixLengthInputFormat;
 
 import java.io.IOException;
+import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -14,7 +15,7 @@ import org.apache.hadoop.mapreduce.Reducer;
  *
  * @author ankit
  */
-public class KeyReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+public class FixReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
@@ -27,5 +28,7 @@ public class KeyReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
         
         context.write(key, new IntWritable(sum)); 
     }
+    
+    
     
 }

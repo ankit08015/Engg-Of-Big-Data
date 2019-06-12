@@ -5,10 +5,30 @@
  */
 package com.hadoop.assignment3_q7.sequenceFileInputFormat;
 
+import java.io.IOException;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
 /**
  *
  * @author ankit
  */
-public class SeqReducer {
+public class SeqReducer  extends Reducer<Text, IntWritable, Text, IntWritable> {
+
+    @Override
+    protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+                
+        int sum=0;
+        for(IntWritable v: values){
+            sum += v.get();
+            // can we use this--  Integer.parseInt(v.toString());
+        }
+        
+        context.write(key, new IntWritable(sum)); 
+    }
+
+
+    
     
 }

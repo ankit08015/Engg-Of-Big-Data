@@ -1,9 +1,9 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.assignment3_q7.KeyValueTextInputFormat;
+package com.hadoop.assignment3_q7.FixLengthInputFormat;
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
@@ -11,8 +11,8 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+//import org.apache.hadoop.mapreduce.lib.input.FixedLengthInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
@@ -20,15 +20,15 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
  *
  * @author ankit
  */
-public class KeyMainMR {
+public class FixMainMR {
     
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
         
-        
+       
     Configuration conf = new Configuration();
          // Create a new Job
-     Job job = Job.getInstance(conf,"KeyValueCount");
-     job.setJarByClass(KeyMainMR.class);
+     Job job = Job.getInstance(conf,"FixLengthInputCount");
+     job.setJarByClass(FixMainMR.class);
      
      // Specify various job-specific parameters     
      job.setJobName("myjob");
@@ -37,8 +37,10 @@ public class KeyMainMR {
      FileInputFormat.addInputPath(job, new Path(args[0]));
      FileOutputFormat.setOutputPath(job, new Path(args[1]));
      
+     conf.setInt("mapreduce.input.fixedlengthinputformat.record.length",502);
+ 
      
-     job.setInputFormatClass(KeyValueTextInputFormat.class);
+     job.setInputFormatClass(FixedLengthInputFormat.class);
      job.setOutputFormatClass(TextOutputFormat.class);
      
      job.setMapOutputKeyClass(Text.class);
@@ -47,8 +49,8 @@ public class KeyMainMR {
      
      
      
-     job.setMapperClass(KeyMapper.class);
-     job.setReducerClass(KeyReducer.class);
+     job.setMapperClass(FixMapper.class);
+     job.setReducerClass(FixReducer.class);
      
      job.setOutputKeyClass(Text.class);
      job.setOutputValueClass(IntWritable.class);

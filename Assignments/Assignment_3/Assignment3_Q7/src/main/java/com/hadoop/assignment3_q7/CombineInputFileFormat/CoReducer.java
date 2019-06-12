@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.assignment3_q7.KeyValueTextInputFormat;
+package com.hadoop.assignment3_q7.CombineInputFileFormat;
 
 import java.io.IOException;
 import org.apache.hadoop.io.IntWritable;
@@ -14,12 +14,12 @@ import org.apache.hadoop.mapreduce.Reducer;
  *
  * @author ankit
  */
-public class KeyReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+public class CoReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-                       
-        int sum = 0;
+                
+        int sum=0;
         for(IntWritable v: values){
             sum += v.get();
             // can we use this--  Integer.parseInt(v.toString());
@@ -27,5 +27,8 @@ public class KeyReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
         
         context.write(key, new IntWritable(sum)); 
     }
+
+
+    
     
 }

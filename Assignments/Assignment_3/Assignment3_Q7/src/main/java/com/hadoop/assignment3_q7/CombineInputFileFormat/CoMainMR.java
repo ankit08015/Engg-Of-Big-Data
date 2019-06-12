@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.assignment3_q7.KeyValueTextInputFormat;
+package com.hadoop.assignment3_q7.CombineInputFileFormat;
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
@@ -12,23 +12,23 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+import org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer;
 
 /**
  *
  * @author ankit
  */
-public class KeyMainMR {
+public class CoMainMR {
     
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
         
         
     Configuration conf = new Configuration();
          // Create a new Job
-     Job job = Job.getInstance(conf,"KeyValueCount");
-     job.setJarByClass(KeyMainMR.class);
+     Job job = Job.getInstance(conf,"COFcount");
+     job.setJarByClass(CoMainMR.class);
      
      // Specify various job-specific parameters     
      job.setJobName("myjob");
@@ -37,8 +37,9 @@ public class KeyMainMR {
      FileInputFormat.addInputPath(job, new Path(args[0]));
      FileOutputFormat.setOutputPath(job, new Path(args[1]));
      
+
      
-     job.setInputFormatClass(KeyValueTextInputFormat.class);
+     job.setInputFormatClass(CFInputFormat.class);
      job.setOutputFormatClass(TextOutputFormat.class);
      
      job.setMapOutputKeyClass(Text.class);
@@ -47,11 +48,14 @@ public class KeyMainMR {
      
      
      
-     job.setMapperClass(KeyMapper.class);
-     job.setReducerClass(KeyReducer.class);
+     job.setMapperClass(CoMapper.class);
+     //job.setReducerClass(CoReducer.class);
      
-     job.setOutputKeyClass(Text.class);
-     job.setOutputValueClass(IntWritable.class);
+       job.setReducerClass(IntSumReducer.class);
+        job.setNumReduceTasks(13);
+     
+    // job.setOutputKeyClass(Text.class);
+     //job.setOutputValueClass(IntWritable.class);
 
      // Submit the job, then poll for progress until the job is complete
      System.exit(job.waitForCompletion(true)?0:1);
