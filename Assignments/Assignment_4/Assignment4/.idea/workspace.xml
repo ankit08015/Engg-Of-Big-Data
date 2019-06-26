@@ -16,39 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockCombiner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_7/MedianSdDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_7/MedianSdMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -78,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_7/MedianSdTuple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#291#292#0" expanded="true" />
@@ -97,10 +64,43 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/part-r-00000">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/NYSE_daily_prices_Q.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/input/NYSE_daily_prices_S.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-350557" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -141,6 +141,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockCombiner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_7/MedianSdTuple.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortMapper.java" />
       </list>
     </option>
   </component>
@@ -162,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,6 +176,11 @@
               <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment4" type="462c0819:PsiDirectoryNode" />
               <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment4" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
@@ -225,6 +233,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment4" type="462c0819:PsiDirectoryNode" />
+              <item name="part_4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment4" type="462c0819:PsiDirectoryNode" />
               <item name="part_5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,7 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -270,7 +286,7 @@
   </component>
   <component name="RunManager">
     <configuration name="hadoop" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.hadoop.assignment4.part_7.MedianSdDriver" />
+      <option name="MAIN_CLASS_NAME" value="com.hadoop.assignment4.part_4.SecondarySortDriver" />
       <module name="Assignment4" />
       <option name="PROGRAM_PARAMETERS" value="input output" />
       <method v="2">
@@ -293,9 +309,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="903" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26674044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -304,7 +319,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3943299" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3943299" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39948454" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,9 +382,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/._SUCCESS.crc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output/._SUCCESS.crc" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_2/MinMaxDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -459,9 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/ratings.dat">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/input/ratings.dat" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockPriceTuple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
@@ -489,9 +500,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/input/NYSE_daily_prices_S.csv" />
+    <entry file="file://$PROJECT_DIR$/output/_SUCCESS" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockCombiner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="210">
           <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -501,7 +514,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_5/AvgStockReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="165">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -511,7 +524,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_7/MedianSdDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="60">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
@@ -537,17 +550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_6/MovieTuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_7/MedianSdTuple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#291#292#0" expanded="true" />
@@ -564,16 +570,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/part-r-00000">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="450">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/NYSE_daily_prices_S.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-350557" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_6/MovieTuple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/NYSE_daily_prices_Q.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hadoop/assignment4/part_4/SecondarySortMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
       </provider>
     </entry>
   </component>
