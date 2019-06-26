@@ -1,0 +1,8 @@
+com/hadoop/assignment4/part_3/StockCombiner.class
+com/hadoop/assignment4/part_3/StockReducer.class
+com/hadoop/assignment4/part_2/MinMaxStockMapper.class
+com/hadoop/assignment4/part_2/MinMaxStockReducer.class
+com/hadoop/assignment4/part_3/StockMapper.class
+com/hadoop/assignment4/part_3/StockDriver.class
+com/hadoop/assignment4/part_2/MinMaxStockTuple.class
+com/hadoop/assignment4/part_2/MinMaxDriver.class

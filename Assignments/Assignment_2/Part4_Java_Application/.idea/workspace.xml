@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00112e27-ff9c-4cd5-9522-5e63b607997f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment_3/ASSIGNMENT_3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment_3/ASSIGNMENT_3.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Lab/Lab_4-Hadoop_MR/HadoopLab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab/Lab_4-Hadoop_MR/HadoopLab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab/Lab_4-Hadoop_MR/HadoopLab4/src/main/java/com/ankit/mr/hadooplab4/WordCountMR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab/Lab_4-Hadoop_MR/HadoopLab4/src/main/java/com/ankit/mr/hadooplab4/WordCountMR.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/LogUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="123" column="20" lean-forward="true" selection-start-line="117" selection-end-line="143" selection-end-column="5" />
+            <state relative-caret-position="426">
+              <caret line="123" column="20" selection-start-line="117" selection-end-line="143" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="270">
               <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
@@ -212,9 +208,9 @@
     <option name="totallyTimeSpent" value="12862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="903" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2562258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2589928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -261,6 +257,16 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-sync/3.8.1/mongodb-driver-sync-3.8.1.jar!/com/mongodb/client/internal/MongoCollectionImpl.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.8.1/mongodb-driver-3.8.1.jar!/com/mongodb/MongoClient.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ConnectToDB.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/LogUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="123" column="20" selection-start-line="117" selection-end-line="143" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UploadMovieData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -273,18 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="270">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LogUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="123" column="20" lean-forward="true" selection-start-line="117" selection-end-line="143" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

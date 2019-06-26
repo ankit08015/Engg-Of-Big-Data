@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ankit.mr.hadooplab4;
+package com.hadoop.assignment4.part_2;
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
@@ -20,42 +20,40 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
  *
  * @author ankit
  */
-public class WordCountMR {
+public class MinMaxDriver {
     
-    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
+    public static void main(String [] args)  throws IOException, InterruptedException, ClassNotFoundException{
         
-        
-    // Configuration conf = new Configuration();
+     //Configuration conf = new Configuration();
          // Create a new Job
-     Job job = Job.getInstance();
-     job.setJarByClass(WordCountMR.class);
+     Job job = Job.getInstance();//(conf,"MinMaxStock");
+     job.setJarByClass(MinMaxDriver.class);
      
      // Specify various job-specific parameters     
      job.setJobName("myjob");
-     
+     job.setMapperClass(MinMaxStockMapper.class);
+     job.setReducerClass(MinMaxStockReducer.class);
+     job.setNumReduceTasks(1);
+     TextInputFormat.addInputPath(job, new Path(args[0]));
+
+     job.setInputFormatClass(TextInputFormat.class);
+
+     job.setMapOutputKeyClass(Text.class);
+     job.setMapOutputValueClass(MinMaxStockTuple.class);
+
      
      FileInputFormat.addInputPath(job, new Path(args[0]));
      FileOutputFormat.setOutputPath(job, new Path(args[1]));
-     
-     
-     job.setInputFormatClass(TextInputFormat.class);
-   //  job.setOutputFormatClass(TextOutputFormat.class);
-     
-     job.setMapOutputKeyClass(Text.class);
-     job.setMapOutputValueClass(IntWritable.class);
-     
-     
-     
-     
-     job.setMapperClass(WordMapper.class);
-     job.setReducerClass(WordCountReducer.class);
-     
+
      job.setOutputKeyClass(Text.class);
-     job.setOutputValueClass(IntWritable.class);
+     job.setOutputValueClass(MinMaxStockTuple.class);
+     
+
+     job.setOutputFormatClass(TextOutputFormat.class);
+
 
      // Submit the job, then poll for progress until the job is complete
      System.exit(job.waitForCompletion(true)?0:1);
-     
     }
     
 }
