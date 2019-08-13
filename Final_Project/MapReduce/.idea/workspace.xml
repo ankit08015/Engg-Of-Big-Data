@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/count/MRCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/src_dest_count/MRCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/count/WordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/src_dest_count/WordMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/count/WordReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/src_dest_count/WordReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/count/MRCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/count/WordMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/count/WordReducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/project-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/src_dest_count/MRCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/src_dest_count/MRCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/unique_carrier_count/CarrierMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/unique_carrier_count/CarrierMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/unique_carrier_count/CarrierMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/unique_carrier_count/CarrierMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/unique_carrier_count/CarrierReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/unique_carrier_count/CarrierReducer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +88,7 @@
   </component>
   <component name="RunManager">
     <configuration name="hadoop" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="hadoop.project.delayed_count.DelayedMain" />
+      <option name="MAIN_CLASS_NAME" value="hadoop.project.unique_carrier_count.CarrierMain" />
       <module name="project" />
       <option name="PROGRAM_PARAMETERS" value="input output" />
       <extension name="coverage">
@@ -127,7 +116,7 @@
       <workItem from="1565634754173" duration="3098000" />
       <workItem from="1565661038819" duration="3805000" />
       <workItem from="1565666874570" duration="2497000" />
-      <workItem from="1565671398973" duration="2138000" />
+      <workItem from="1565671398973" duration="2421000" />
     </task>
     <servers />
   </component>

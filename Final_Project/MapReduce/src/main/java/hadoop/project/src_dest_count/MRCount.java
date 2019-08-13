@@ -9,8 +9,6 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
-import unique_carrier_count.CarrierMapper;
-import unique_carrier_count.CarrierReducer;
 
 import java.io.IOException;
 
@@ -21,7 +19,7 @@ public class MRCount {
         Configuration conf = new Configuration();
         // Create a new Job
         Job job = Job.getInstance(conf,"wordcount");
-        job.setJarByClass(CarrierMapper.class);
+        job.setJarByClass(WordMapper.class);
 
         // Specify various job-specific parameters
         job.setJobName("myjob");
@@ -40,8 +38,8 @@ public class MRCount {
 
 
 
-        job.setMapperClass(CarrierMapper.class);
-        job.setReducerClass(CarrierReducer.class);
+        job.setMapperClass(WordMapper.class);
+        job.setReducerClass(WordReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
@@ -50,5 +48,4 @@ public class MRCount {
         System.exit(job.waitForCompletion(true)?0:1);
 
     }
-
 }

@@ -1,4 +1,4 @@
-package unique_carrier_count;
+package hadoop.project.unique_carrier_count;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
