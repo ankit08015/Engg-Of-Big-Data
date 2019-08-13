@@ -1,13 +1,14 @@
-package hadoop.project.inner_join_carriers;
+package hadoop.project.yearly_data;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class FlightMapper extends Mapper<LongWritable, Text, Text, Text> {
+public class YearMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     //    hadoop datatype
     Text word = new Text();
@@ -17,12 +18,12 @@ public class FlightMapper extends Mapper<LongWritable, Text, Text, Text> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
         String line = value.toString();
-        String[] tokens= line.split("\t");
-        if(tokens[0].equals("Code"))return;
-        String newKey = tokens[0];
-        word.set(newKey);
-        String outValue= "B"+tokens[1];
-        context.write(word,new Text(outValue));
+        String[] tokens= line.split(",");
+        if(tokens[0].equals("Year"))return;
+        String year = tokens[0];
+        word.set(year);
+        context.write(word,one);
     }
+
 
 }
