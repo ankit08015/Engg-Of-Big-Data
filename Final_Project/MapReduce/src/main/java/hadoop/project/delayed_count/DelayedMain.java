@@ -1,8 +1,9 @@
-package hadoop.project.count;
+package hadoop.project.delayed_count;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -12,14 +13,14 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import java.io.IOException;
 
-public class MRCount {
+public class DelayedMain {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
 
 
         Configuration conf = new Configuration();
         // Create a new Job
         Job job = Job.getInstance(conf,"wordcount");
-        job.setJarByClass(WordMapper.class);
+        job.setJarByClass(DelayedMapper.class);
 
         // Specify various job-specific parameters
         job.setJobName("myjob");
@@ -32,14 +33,12 @@ public class MRCount {
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
 
-        job.setMapOutputKeyClass(Text.class);
+        job.setMapOutputKeyClass(NullWritable.class);
         job.setMapOutputValueClass(IntWritable.class);
 
 
-
-
-        job.setMapperClass(WordMapper.class);
-        job.setReducerClass(WordReducer.class);
+        job.setMapperClass(DelayedMapper.class);
+        job.setReducerClass(DelayedReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);

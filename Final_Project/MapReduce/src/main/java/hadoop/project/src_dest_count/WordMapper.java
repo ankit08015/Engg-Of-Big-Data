@@ -1,4 +1,4 @@
-package hadoop.project.count;
+package hadoop.project.src_dest_count;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
