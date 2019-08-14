@@ -1,14 +1,20 @@
-AA	flightCount=165121, delayedFlightCount=1956, delayPercent=1.18
-AS	flightCount=21406, delayedFlightCount=215, delayPercent=1.00
-CO	flightCount=123002, delayedFlightCount=2508, delayPercent=2.04
-DL	flightCount=185813, delayedFlightCount=2057, delayPercent=1.11
-EA	flightCount=108776, delayedFlightCount=2454, delayPercent=2.26
-HP	flightCount=45399, delayedFlightCount=536, delayPercent=1.18
-NW	flightCount=108273, delayedFlightCount=1587, delayPercent=1.47
-PA (1)	flightCount=16785, delayedFlightCount=199, delayPercent=1.19
-PI	flightCount=116482, delayedFlightCount=1229, delayPercent=1.06
-PS	flightCount=41706, delayedFlightCount=879, delayPercent=2.11
-TW	flightCount=69650, delayedFlightCount=1243, delayPercent=1.78
-UA	flightCount=152624, delayedFlightCount=3436, delayPercent=2.25
-US	flightCount=94814, delayedFlightCount=755, delayPercent=0.80
-WN	flightCount=61975, delayedFlightCount=631, delayPercent=1.02
+ILG	0.0
+DAL	9.504950495049505
+GNV	10.756302521008404
+YUM	10.821643286573146
+TLH	11.453320500481231
+APF	11.583011583011583
+ALO	11.797752808988763
+CDV	11.888111888111888
+ITH	12.480252764612953
+FLG	12.631578947368421
+LFT	13.10344827586207
+HDN	13.114754098360656
+SCC	13.178294573643413
+PIA	13.268032056990206
+CPR	13.344051446945338
+MAF	13.353115727002967
+CRP	13.526570048309178
+SAV	13.627118644067796
+HSV	13.972055888223553
+BGM	14.018691588785046
