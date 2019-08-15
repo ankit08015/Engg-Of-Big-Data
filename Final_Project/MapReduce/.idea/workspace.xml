@@ -8,18 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input1/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/CompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/CompositeKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/GroupComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/GroupComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/KeyPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/KeyPartition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/CompositeKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/CompositeKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/GroupComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/GroupComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/KeyPartition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/KeyPartition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortMapper.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,6 +139,7 @@
       <workItem from="1565770050926" duration="2418000" />
       <workItem from="1565775019765" duration="3640000" />
       <workItem from="1565816845015" duration="6583000" />
+      <workItem from="1565827895618" duration="150000" />
     </task>
     <servers />
   </component>
