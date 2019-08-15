@@ -5,14 +5,7 @@
 # bzip2 -dk filename.bz2
 
 
-echo "downloading start for 1987"
-wget http://stat-computing.org/dataexpo/2009/1987.csv.bz2
-echo "downloading done for 1987"
-echo "unzipping start for 1987"
-bzip2 -dk 1987.csv.bz2
-echo "unzipping done for 1987"
-
-for i in {1988..2008}; do
+for i in {1987..2008}; do
   echo "downloading start for " $i
   wget http://stat-computing.org/dataexpo/2009/$i.csv.bz2
   echo "downloading done for " $i
