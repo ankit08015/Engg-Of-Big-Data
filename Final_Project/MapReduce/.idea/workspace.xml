@@ -7,7 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers/RMSCountTuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers/RMSCountTuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/rms_src_dest_carriers/RMSCountTuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/rms_src_dest_carriers/RMSCountTuple.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,9 +101,9 @@
   </component>
   <component name="RunManager">
     <configuration name="hadoop" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="hadoop.project.recommendation_system.SecondarySortDriver" />
+      <option name="MAIN_CLASS_NAME" value="hadoop.project.rms_src_dest_carriers.RMSMain" />
       <module name="project" />
-      <option name="PROGRAM_PARAMETERS" value="input1 output" />
+      <option name="PROGRAM_PARAMETERS" value="input output" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hadoop.project.src_dest_count.*" />
@@ -140,6 +145,7 @@
       <workItem from="1565775019765" duration="3640000" />
       <workItem from="1565816845015" duration="6583000" />
       <workItem from="1565827895618" duration="150000" />
+      <workItem from="1565828337321" duration="1583000" />
     </task>
     <servers />
   </component>

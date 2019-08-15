@@ -44,22 +44,22 @@ public class RMSCountTuple implements Writable {
     public void setRms(double rms) {
         this.rms = rms;
     }
-//
-//    @Override
-//    public String toString() {
-//        return "RMSCountTuple{" +
-//                "arrDelay=" + arrDelay +
-//                ", depDelay=" + depDelay +
-//                ", totalFlight=" + totalFlight +
-//                ", rms=" +  String.format("%.4f", rms)+
-//                '}';
-//    }
-
 
     @Override
     public String toString() {
-        return String.format("%.4f", rms);
+        return "{" +
+                "arrDelay=" + arrDelay +
+                ", depDelay=" + depDelay +
+                ", totalFlight=" + totalFlight +
+                ", rms=" +  String.format("%.4f", rms)+
+                '}';
     }
+
+//
+//    @Override
+//    public String toString() {
+//        return String.format("%.4f", rms);
+//    }
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
