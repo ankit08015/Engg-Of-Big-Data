@@ -1,5 +1,5 @@
 -- First, we load the raw data from a test dataset
-RAW_DATA = LOAD '/home/ankit/Downloads/2008.csv' USING PigStorage(',') AS 
+RAW_DATA = LOAD '/flight-data' USING PigStorage(',') AS 
 	(year: int, month: int, day: int, dow: int, 
 	dtime: int, sdtime: int, arrtime: int, satime: int, 
 	carrier: chararray, fn: int, tn: chararray, 
@@ -14,5 +14,6 @@ CARRIER_DATA = FOREACH RAW_DATA GENERATE month AS m, carrier AS cname;
 GROUP_CARRIERS = GROUP CARRIER_DATA BY (m,cname);
 COUNT_CARRIERS = FOREACH GROUP_CARRIERS GENERATE FLATTEN(group), LOG10(COUNT(CARRIER_DATA)) AS popularity;
 
-dump COUNT_CARRIERS
+STORE topMonthlyOutbound INTO '/PIG-OUTPUT/Q2/COUNT_CARRIERS' USING PigStorage(',');
+--dump COUNT_CARRIERS
 

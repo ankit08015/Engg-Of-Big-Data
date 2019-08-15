@@ -1,5 +1,5 @@
 -- First, we load the raw data from a test dataset
-RAW_DATA = LOAD '/home/ankit/Downloads/2008.csv' USING PigStorage(',') AS 
+RAW_DATA = LOAD '/flight-data' USING PigStorage(',') AS 
 	(year: int, month: int, day: int, dow: int, 
 	dtime: int, sdtime: int, arrtime: int, satime: int, 
 	carrier: chararray, fn: int, tn: chararray, 
@@ -35,4 +35,5 @@ COUNT_TOTAL = FOREACH B {
 	GENERATE group, COUNT(A) AS tot, COUNT(C) AS del, (float) COUNT(C)/COUNT(A) AS frac;
 }
 
-dump COUNT_TOTAL;
+--dump COUNT_TOTAL;
+STORE topMonthlyOutbound INTO '/PIG-OUTPUT/Q4/COUNT_TOTAL' USING PigStorage(',');

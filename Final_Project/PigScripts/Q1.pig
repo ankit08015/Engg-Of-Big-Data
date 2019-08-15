@@ -1,5 +1,5 @@
 -- First, we load the raw data from a test dataset
-RAW_DATA = LOAD '/home/ankit/Downloads/2008.csv' USING PigStorage(',') AS 
+RAW_DATA = LOAD '/flight-data' USING PigStorage(',') AS 
 	(year: int, month: int, day: int, dow: int, 
 	dtime: int, sdtime: int, arrtime: int, satime: int, 
 	carrier: chararray, fn: int, tn: chararray, 
@@ -9,31 +9,6 @@ RAW_DATA = LOAD '/home/ankit/Downloads/2008.csv' USING PigStorage(',') AS
 	tintime: int, touttime: int, 
 	cancel: chararray, cancelcode: chararray, diverted: int, 
 	cdelay: int, wdelay: int, ndelay: int, sdelay: int, latedelay: int);
-
-/*
-
--------------------------------------------
---  AGGREGATE OUTBOUND TRAFFIC, PER IATA AIRPORT CODE
--------------------------------------------
--- Group by the IATA code of the departure airport
-SOURCE_IATA_GROUP = GROUP RAW_DATA BY scode;
--- Count the number of flights out-bound that particular airport
-OUTBOUND_IATA_COUNT = FOREACH SOURCE_IATA_GROUP GENERATE group as IATA, COUNT(RAW_DATA) AS num_out_flights;
-
-
--------------------------------------------
--- AGGREGATE INBOUND TRAFFIC, PER IATA AIRPORT CODE
--------------------------------------------
--- Group by the IATA code of the destination airport
-DEST_IATA_GROUP = GROUP RAW_DATA BY dcode;
--- Count the number of flights in-bound that particular airport
-INBOUND_IATA_COUNT = FOREACH DEST_IATA_GROUP GENERATE group as IATA, COUNT(RAW_DATA) AS num_in_flights;
-
-
-STORE OUTBOUND_IATA_COUNT INTO '/home/ankit/Downloads/output/OUTBOUND.txt' USING PigStorage(',');
-STORE INBOUND_IATA_COUNT INTO '/home/ankit/Downloads/output/INBOUND.txt' USING PigStorage(',');
-*/
-
 
 
 ------------------------------------------------------------
@@ -54,7 +29,7 @@ topMonthlyInbound = FOREACH GROUP_COUNT_INBOUND {
 }
 
 --dump topMonthlyInbound
-STORE topMonthlyInbound INTO '/home/ankit/Downloads/output/INBOUND-TOP' USING PigStorage(',');
+STORE topMonthlyInbound INTO '/PIG-OUTPUT/Q1/INBOUND-TOP' USING PigStorage(',');
 
 ------------------------------------------------------------
 --  OUTBOUND TRAFFIC, PER IATA AIRPORT CODE, PER MONTH, TOP k
@@ -69,7 +44,7 @@ topMonthlyOutbound = FOREACH GROUP_COUNT_OUTBOUND {
 }
 
 --dump topMonthlyOutbound
-STORE topMonthlyOutbound INTO '/home/ankit/Downloads/output/OUTBOUND-TOP' USING PigStorage(',');
+STORE topMonthlyOutbound INTO '/PIG-OUTPUT/Q1/OUTBOUND-TOP' USING PigStorage(',');
 
 
 
@@ -87,7 +62,7 @@ topMonthlyTraffic = FOREACH TOTAL_MONTHLY {
 }
 
 
-STORE topMonthlyTraffic INTO '/home/ankit/Downloads/output/MONTHLY-TRAFFIC-TOP/' USING PigStorage(',');
+STORE topMonthlyTraffic INTO '/PIG-OUTPUT/Q1/MONTHLY-TRAFFIC-TOP/' USING PigStorage(',');
 
 explain -brief -dot -out ./ topMonthlyTraffic
 
