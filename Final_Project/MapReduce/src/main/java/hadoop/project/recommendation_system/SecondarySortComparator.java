@@ -35,17 +35,15 @@ public class SecondarySortComparator extends WritableComparator {
 		CompositeKey ck1 = (CompositeKey) a;
 		CompositeKey ck2 = (CompositeKey) b;
 
-		int result = ck1.getStockSymbol().compareTo(ck2.getStockSymbol());
+		int result = ck1.getSrcDest().compareTo(ck2.getSrcDest());
 
 		if (result == 0) {
-                    try {
-                        Date d1= frmt.parse(ck1.getDate());
-                        Date d2= frmt.parse(ck2.getDate());
-                        
-                        return -d1.compareTo(d2);
-                    } catch (ParseException ex) {
-                        Logger.getLogger(SecondarySortComparator.class.getName()).log(Level.SEVERE, null, ex);
-                    }
+			String c1 = ck1.getCarrierInfo();
+			Double rms1 = Double.parseDouble(c1.split("\t")[1]);
+
+			String c2 = ck2.getCarrierInfo();
+			Double rms2 = Double.parseDouble(c2.split("\t")[1]);
+			result =  rms1.compareTo(rms2);
 			
 		}
 

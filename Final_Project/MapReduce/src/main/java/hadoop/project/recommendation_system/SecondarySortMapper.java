@@ -22,13 +22,13 @@ public class SecondarySortMapper extends Mapper<LongWritable, Text, CompositeKey
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
          //To change body of generated methods, choose Tools | Templates.
          
-         String [] stocks = value.toString().split(",");
+         String [] tokens = value.toString().split("\t",2);
 
          try {
-             String stockSymbol = stocks[1];
-             String date = stocks[2];
+             String srcDest = tokens[0];
+             String carrInfo = tokens[1];
 
-             CompositeKey coKey = new CompositeKey(stockSymbol, date);
+             CompositeKey coKey = new CompositeKey(srcDest, carrInfo);
 
              context.write(coKey, NullWritable.get());
          }catch(Exception e){

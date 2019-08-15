@@ -17,7 +17,7 @@ public class KeyPartition extends Partitioner<CompositeKey, NullWritable>{
 	@Override
 	public int getPartition(CompositeKey key, NullWritable value, int numPartitions) {
 		
-		return key.getStockSymbol().hashCode()%numPartitions;
+		return key.getSrcDest().hashCode()%numPartitions;
 		
 	}
 

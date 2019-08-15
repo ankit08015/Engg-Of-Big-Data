@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eed6b55-3ceb-4d90-970d-467d6c36f985" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/out/artifacts/project_jar/project.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/out/artifacts/project_jar/project.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/input1/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/CompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/CompositeKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/GroupComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/GroupComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/KeyPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/KeyPartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/SecondarySortComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/SecondarySortComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/SecondarySortMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/src/main/java/hadoop/project/recommendation_system/SecondarySortMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/CompositeKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/CompositeKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/GroupComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/GroupComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/KeyPartition.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/KeyPartition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/SecondarySortComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/SecondarySortComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/SecondarySortMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final_Project/MapReduce/target/classes/hadoop/project/recommendation_system/SecondarySortMapper.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +55,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561529831304</updated>
-      <workItem from="1565820298459" duration="360000" />
+      <workItem from="1565820298459" duration="638000" />
     </task>
     <servers />
   </component>

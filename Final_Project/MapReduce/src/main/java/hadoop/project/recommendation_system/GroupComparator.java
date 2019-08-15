@@ -23,7 +23,7 @@ public class GroupComparator extends WritableComparator{
 		CompositeKey ckw1 = (CompositeKey)a;
 		CompositeKey ckw2 = (CompositeKey)b;
 		
-		return ckw1.getStockSymbol().compareTo(ckw2.getStockSymbol());
+		return ckw1.getSrcDest().compareTo(ckw2.getSrcDest());
 	}
 }
 	

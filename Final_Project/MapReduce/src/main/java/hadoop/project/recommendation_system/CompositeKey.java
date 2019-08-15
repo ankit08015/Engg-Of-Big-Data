@@ -17,54 +17,56 @@ import java.io.IOException;
  */
 public class CompositeKey implements WritableComparable<CompositeKey>{
 
-    private String stockSymbol;
-    private String date;
+    private String srcDest;
+    private String carrierInfo;
 
     public CompositeKey() {
         super();
     }
-    
 
-    public CompositeKey(String stockSymbol, String date) {
-        this.stockSymbol = stockSymbol;
-        this.date = date;
-    }    
-    
-
-    public String getStockSymbol() {
-        return stockSymbol;
+    public String getSrcDest() {
+        return srcDest;
     }
 
-    public void setStockSymbol(String stockSymbol) {
-        this.stockSymbol = stockSymbol;
+    public void setSrcDest(String srcDest) {
+        this.srcDest = srcDest;
     }
 
-    public String getDate() {
-        return date;
+    public String getCarrierInfo() {
+        return carrierInfo;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setCarrierInfo(String carrierInfo) {
+        this.carrierInfo = carrierInfo;
     }
-    
-    
+
+    public CompositeKey(String srcDest, String carrierInfo) {
+        this.srcDest = srcDest;
+        this.carrierInfo = carrierInfo;
+    }
+
     @Override
     public void write(DataOutput d) throws IOException {
-        d.writeUTF(date);
-        d.writeUTF(stockSymbol);
+        d.writeUTF(srcDest);
+        d.writeUTF(carrierInfo);
     }
 
     @Override
     public void readFields(DataInput di) throws IOException {
-        date = di.readUTF();
-        stockSymbol= di.readUTF();
+        srcDest = di.readUTF();
+        carrierInfo = di.readUTF();
     }
 
     @Override
     public int compareTo(CompositeKey o) {
-        int result = this.stockSymbol.compareTo(o.getStockSymbol());
+        int result = this.srcDest.compareTo(o.getSrcDest());
         if(result==0){
-            return this.date.compareTo(o.getDate());
+            String c1 = this.carrierInfo;
+            Double rms1 = Double.parseDouble(c1.split("\t")[1]);
+
+            String c2 = o.getCarrierInfo();
+            Double rms2 = Double.parseDouble(c2.split("\t")[1]);
+            return rms1.compareTo(rms2);
         }
         
         return result;
@@ -72,9 +74,6 @@ public class CompositeKey implements WritableComparable<CompositeKey>{
 
     @Override
     public String toString() {
-        return stockSymbol + ", " + date;
+        return srcDest + " : " + carrierInfo;
     }
-    
-    
-    
 }

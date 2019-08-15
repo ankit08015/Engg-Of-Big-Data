@@ -7,10 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/Assignment_4/Assignment4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input1/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/CompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/CompositeKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/GroupComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/GroupComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/KeyPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/KeyPartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system/SecondarySortMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/CompositeKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/CompositeKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/GroupComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/GroupComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/KeyPartition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/KeyPartition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/recommendation_system/SecondarySortMapper.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,11 +80,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/avg_distance_carrier" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/top_dst" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/top20_src" />
-      <recent name="$PROJECT_DIR$/input" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hadoop.project.rms_src_dest_carriers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/input1" />
@@ -96,9 +108,9 @@
   </component>
   <component name="RunManager">
     <configuration name="hadoop" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="hadoop.project.avg_distance_carrier.AverageMain" />
+      <option name="MAIN_CLASS_NAME" value="hadoop.project.recommendation_system.SecondarySortDriver" />
       <module name="project" />
-      <option name="PROGRAM_PARAMETERS" value="input output" />
+      <option name="PROGRAM_PARAMETERS" value="input1 output" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hadoop.project.src_dest_count.*" />
@@ -138,7 +150,7 @@
       <workItem from="1565768002572" duration="1669000" />
       <workItem from="1565770050926" duration="2418000" />
       <workItem from="1565775019765" duration="3640000" />
-      <workItem from="1565816845015" duration="3064000" />
+      <workItem from="1565816845015" duration="6583000" />
     </task>
     <servers />
   </component>
