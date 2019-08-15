@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~WRL0257.tmp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +146,7 @@
       <workItem from="1565839676054" duration="219000" />
       <workItem from="1565842975004" duration="4714000" />
       <workItem from="1565848017302" duration="1686000" />
-      <workItem from="1565878772970" duration="662000" />
+      <workItem from="1565878772970" duration="3041000" />
     </task>
     <servers />
   </component>

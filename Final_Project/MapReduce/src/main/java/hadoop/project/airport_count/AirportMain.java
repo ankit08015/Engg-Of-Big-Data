@@ -18,7 +18,7 @@ public class AirportMain {
 
         Configuration conf = new Configuration();
         // Create a new Job
-        Job job = Job.getInstance(conf,"wordcount");
+        Job job = Job.getInstance(conf,"airportcount");
         job.setJarByClass(AirportMain.class);
 
         // Specify various job-specific parameters
