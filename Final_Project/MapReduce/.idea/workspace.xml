@@ -7,13 +7,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/AirportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/AirportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/AirportMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/AirportMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/airport_count/AirportReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/airport_count/AirportMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/airport_count/AirportMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/airport_count/AirportMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/airport_count/AirportMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/airport_count/AirportReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/airport_count/AirportReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/cancelled_by_year/CancMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/cancelled_by_year/CancMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/cancelled_by_year/CancMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/cancelled_by_year/CancMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/cancelled_by_year/CancReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/cancelled_by_year/CancReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/delay_per_year/DelayedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/delay_per_year/DelayedMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/delay_per_year/DelayedMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/delay_per_year/DelayedMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/delay_per_year/DelayedReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/delay_per_year/DelayedReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/delayed_count/DelayedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/delayed_count/DelayedMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/delayed_count/DelayedMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/delayed_count/DelayedMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/delayed_count/DelayedReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/delayed_count/DelayedReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_new/PostCommentBuildingDriver$CommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_new/PostCommentBuildingDriver$PostCommentHierarchyReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_new/PostCommentBuildingDriver$PostMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_new/PostCommentBuildingDriver.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/CarrierMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/CarrierMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/FlightMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/FlightMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/FlightMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/FlightMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/FlightReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/inner_join_carriers/FlightReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/src_dest_count/WordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/src_dest_count/WordMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/src_dest_count/WordReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/src_dest_count/WordReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/top30_busy_src_dest_pair/TopNMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/top30_busy_src_dest_pair/TopNMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/top30_busy_src_dest_pair/TopNMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/top30_busy_src_dest_pair/TopNMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/top30_busy_src_dest_pair/TopNReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/top30_busy_src_dest_pair/TopNReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/total_count/MRCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/total_count/MRCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/total_count/WordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/total_count/WordMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/total_count/WordReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/total_count/WordReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/unique_carrier_count/CarrierMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/unique_carrier_count/CarrierMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/unique_carrier_count/CarrierMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/unique_carrier_count/CarrierMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/unique_carrier_count/CarrierReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/unique_carrier_count/CarrierReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/yearly_data/MRCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/yearly_data/MRCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/yearly_data/YearMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/yearly_data/YearMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/yearly_data/YearReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/yearly_data/YearReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Report.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,31 +99,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/input" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/input1" />
-      <recent name="$PROJECT_DIR$/input" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="hadoop.project.rms_src_dest_carriers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/input" />
       <recent name="$PROJECT_DIR$/airports" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/src_carrier_map" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers" />
       <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system" />
-      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/avg_distance_carrier" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hadoop.project.rms_src_dest_carriers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/input1" />
+      <recent name="$PROJECT_DIR$/input" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -102,9 +140,9 @@
   </component>
   <component name="RunManager">
     <configuration name="hadoop" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="hadoop.project.hier_pattern.HierMain" />
+      <option name="MAIN_CLASS_NAME" value="hadoop.project.airport_count.AirportMain" />
       <module name="project" />
-      <option name="PROGRAM_PARAMETERS" value="airports input1 output" />
+      <option name="PROGRAM_PARAMETERS" value="input output" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hadoop.project.src_dest_count.*" />
@@ -150,6 +188,7 @@
       <workItem from="1565839676054" duration="219000" />
       <workItem from="1565842975004" duration="4714000" />
       <workItem from="1565848017302" duration="1686000" />
+      <workItem from="1565878772970" duration="662000" />
     </task>
     <servers />
   </component>
