@@ -19,7 +19,7 @@ public class MRCount {
         Configuration conf = new Configuration();
         // Create a new Job
         Job job = Job.getInstance(conf,"wordcount");
-        job.setJarByClass(WordMapper.class);
+        job.setJarByClass(SrcDestMapper.class);
 
         // Specify various job-specific parameters
         job.setJobName("myjob");
@@ -38,8 +38,8 @@ public class MRCount {
 
 
 
-        job.setMapperClass(WordMapper.class);
-        job.setReducerClass(WordReducer.class);
+        job.setMapperClass(SrcDestMapper.class);
+        job.setReducerClass(SrcDestReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);

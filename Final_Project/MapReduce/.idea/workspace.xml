@@ -8,11 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0d522359-8159-4eae-bacb-a2717f9b3295" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/project_jar/project.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers/RMSCountTuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers/RMSCountTuple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/rms_src_dest_carriers/RMSCountTuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/rms_src_dest_carriers/RMSCountTuple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/AirportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/AirportMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/project/hier_pattern/HierReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/AirportMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/AirportMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/project/hier_pattern/HierReducer.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/airports" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,19 +73,19 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers" />
-      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system" />
-      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/avg_distance_carrier" />
-      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/top_dst" />
-      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/top20_src" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/input1" />
+      <recent name="$PROJECT_DIR$/input" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hadoop.project.rms_src_dest_carriers" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/input1" />
-      <recent name="$PROJECT_DIR$/input" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/airports" />
+      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/src_carrier_map" />
+      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/rms_src_dest_carriers" />
+      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/recommendation_system" />
+      <recent name="$PROJECT_DIR$/src/main/java/hadoop/project/avg_distance_carrier" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,9 +102,9 @@
   </component>
   <component name="RunManager">
     <configuration name="hadoop" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="hadoop.project.rms_src_dest_carriers.RMSMain" />
+      <option name="MAIN_CLASS_NAME" value="hadoop.project.hier_pattern.HierMain" />
       <module name="project" />
-      <option name="PROGRAM_PARAMETERS" value="input output" />
+      <option name="PROGRAM_PARAMETERS" value="airports input1 output" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hadoop.project.src_dest_count.*" />
@@ -145,7 +146,10 @@
       <workItem from="1565775019765" duration="3640000" />
       <workItem from="1565816845015" duration="6583000" />
       <workItem from="1565827895618" duration="150000" />
-      <workItem from="1565828337321" duration="1583000" />
+      <workItem from="1565828337321" duration="3544000" />
+      <workItem from="1565839676054" duration="219000" />
+      <workItem from="1565842975004" duration="4714000" />
+      <workItem from="1565848017302" duration="1686000" />
     </task>
     <servers />
   </component>

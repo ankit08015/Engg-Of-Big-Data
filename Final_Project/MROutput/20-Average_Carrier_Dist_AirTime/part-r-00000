@@ -1,0 +1,29 @@
+9E	AverageCountTuple{Total Flights=504652, Total Distance=227703482, Total Air Time=754313474, Average Distance=451.21, Average Air Time=1494.72}
+AA	AverageCountTuple{Total Flights=14602906, Total Distance=1043051525, Total Air Time=546884063, Average Distance=71.43, Average Air Time=37.45}
+AQ	AverageCountTuple{Total Flights=151507, Total Distance=51227324, Total Air Time=207101837, Average Distance=338.12, Average Air Time=1366.95}
+AS	AverageCountTuple{Total Flights=2782295, Total Distance=2092368934, Total Air Time=-180060988, Average Distance=752.03, Average Air Time=-64.72}
+B6	AverageCountTuple{Total Flights=799333, Total Distance=956056615, Total Air Time=1151338297, Average Distance=1196.07, Average Air Time=1440.37}
+CO	AverageCountTuple{Total Flights=8004389, Total Distance=-1404710022, Total Air Time=-781563387, Average Distance=-175.49, Average Air Time=-97.64}
+DH	AverageCountTuple{Total Flights=669687, Total Distance=251483885, Total Air Time=985613333, Average Distance=375.52, Average Air Time=1471.75}
+DL	AverageCountTuple{Total Flights=16208118, Total Distance=-1298102575, Total Air Time=-1486892450, Average Distance=-80.09, Average Air Time=-91.74}
+EA	AverageCountTuple{Total Flights=881538, Total Distance=536021400, Total Air Time=1339260606, Average Distance=608.05, Average Air Time=1519.23}
+EV	AverageCountTuple{Total Flights=1645211, Total Distance=742277300, Total Air Time=-1825235102, Average Distance=451.17, Average Air Time=-1109.42}
+F9	AverageCountTuple{Total Flights=334857, Total Distance=297757070, Total Air Time=509777308, Average Distance=889.21, Average Air Time=1522.37}
+FL	AverageCountTuple{Total Flights=1249409, Total Distance=833241928, Total Air Time=1856768383, Average Distance=666.91, Average Air Time=1486.12}
+HA	AverageCountTuple{Total Flights=272880, Total Distance=161404032, Total Air Time=381096796, Average Distance=591.48, Average Air Time=1396.57}
+HP	AverageCountTuple{Total Flights=3572762, Total Distance=-1607195094, Total Air Time=831953310, Average Distance=-449.85, Average Air Time=232.86}
+ML (1)	AverageCountTuple{Total Flights=69119, Total Distance=46873702, Total Air Time=104382535, Average Distance=678.16, Average Air Time=1510.19}
+MQ	AverageCountTuple{Total Flights=3790050, Total Distance=1388700927, Total Air Time=1204517607, Average Distance=366.41, Average Air Time=317.81}
+NW	AverageCountTuple{Total Flights=10047357, Total Distance=-1438027173, Total Air Time=-2112964318, Average Distance=-143.12, Average Air Time=-210.30}
+OH	AverageCountTuple{Total Flights=1414180, Total Distance=664044565, Total Air Time=2083770904, Average Distance=469.56, Average Air Time=1473.48}
+OO	AverageCountTuple{Total Flights=3020777, Total Distance=1175518881, Total Air Time=143697020, Average Distance=389.14, Average Air Time=47.57}
+PA (1)	AverageCountTuple{Total Flights=310361, Total Distance=210996096, Total Air Time=484961259, Average Distance=679.84, Average Air Time=1562.57}
+PI	AverageCountTuple{Total Flights=862209, Total Distance=327763510, Total Air Time=1294513853, Average Distance=380.14, Average Air Time=1501.39}
+PS	AverageCountTuple{Total Flights=82293, Total Distance=29819392, Total Air Time=121771283, Average Distance=362.36, Average Air Time=1479.73}
+TW	AverageCountTuple{Total Flights=3673505, Total Distance=-1614613432, Total Air Time=1236157660, Average Distance=-439.53, Average Air Time=336.51}
+TZ	AverageCountTuple{Total Flights=206007, Total Distance=237096582, Total Air Time=304677183, Average Distance=1150.92, Average Air Time=1478.97}
+UA	AverageCountTuple{Total Flights=12971049, Total Distance=-964391351, Total Air Time=-2137142143, Average Distance=-74.35, Average Air Time=-164.76}
+US	AverageCountTuple{Total Flights=13741778, Total Distance=-637703914, Total Air Time=-844032545, Average Distance=-46.41, Average Air Time=-61.42}
+WN	AverageCountTuple{Total Flights=15769974, Total Distance=-584533440, Total Air Time=2061208199, Average Distance=-37.07, Average Air Time=130.70}
+XE	AverageCountTuple{Total Flights=2290684, Total Distance=1232713411, Total Air Time=-900268480, Average Distance=538.14, Average Air Time=-393.01}
+YV	AverageCountTuple{Total Flights=822403, Total Distance=327982123, Total Air Time=1201040057, Average Distance=398.81, Average Air Time=1460.40}
