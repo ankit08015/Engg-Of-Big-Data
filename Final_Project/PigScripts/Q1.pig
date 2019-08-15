@@ -29,7 +29,7 @@ topMonthlyInbound = FOREACH GROUP_COUNT_INBOUND {
 }
 
 --dump topMonthlyInbound
-STORE topMonthlyInbound INTO '/PIG-OUTPUT/Q1/INBOUND-TOP' USING PigStorage(',');
+STORE topMonthlyInbound INTO '/PIG-OUTPUT-FULL/Q1/INBOUND-TOP' USING PigStorage(',');
 
 ------------------------------------------------------------
 --  OUTBOUND TRAFFIC, PER IATA AIRPORT CODE, PER MONTH, TOP k
@@ -44,7 +44,7 @@ topMonthlyOutbound = FOREACH GROUP_COUNT_OUTBOUND {
 }
 
 --dump topMonthlyOutbound
-STORE topMonthlyOutbound INTO '/PIG-OUTPUT/Q1/OUTBOUND-TOP' USING PigStorage(',');
+STORE topMonthlyOutbound INTO '/PIG-OUTPUT-FULL/Q1/OUTBOUND-TOP' USING PigStorage(',');
 
 
 
@@ -62,7 +62,7 @@ topMonthlyTraffic = FOREACH TOTAL_MONTHLY {
 }
 
 
-STORE topMonthlyTraffic INTO '/PIG-OUTPUT/Q1/MONTHLY-TRAFFIC-TOP/' USING PigStorage(',');
+STORE topMonthlyTraffic INTO '/PIG-OUTPUT-FULL/Q1/MONTHLY-TRAFFIC-TOP/' USING PigStorage(',');
 
 explain -brief -dot -out ./ topMonthlyTraffic
 

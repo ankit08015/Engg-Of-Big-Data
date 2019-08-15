@@ -28,4 +28,4 @@ B = GROUP A by (s,d);
 COUNT = FOREACH B GENERATE group, COUNT(A);
 
 --dump COUNT;
-STORE topMonthlyOutbound INTO '/PIG-OUTPUT/Q5/COUNT' USING PigStorage(',');
+STORE COUNT INTO '/PIG-OUTPUT-FULL/Q5/COUNT' USING PigStorage(',');

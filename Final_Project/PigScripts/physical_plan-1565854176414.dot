@@ -1,0 +1,62 @@
+#-----------------------------------------------
+# Physical Plan:
+#-----------------------------------------------
+digraph plan {
+compound=true;
+node [shape=rect];
+487399182 [label="TOTAL_TRAFFIC: New For Each(true,false)[bag]"];
+487399181 [label="TOTAL_MONTHLY: Global Rearrange[tuple]"];
+487399180 [label="TOTAL_MONTHLY: Package(Packager)[tuple]{int}"];
+487399179 [label="TOTAL_MONTHLY: Local Rearrange[tuple]{int}(false)"];
+487399302 [label="COUNT_INBOUND: New For Each(true,false)[bag]"];
+487399237 [label="COUNT_OUTBOUND: New For Each(true,false)[bag]"];
+487399368 [label="RAW_DATA: New For Each(false,false,false)[bag]"];
+487399367 [label="RAW_DATA: Split"];
+487399362 [label="RAW_DATA: New For Each(false,false)[bag]"];
+487399361 [label="RAW_DATA: Filter[bag]"];
+487399297 [label="RAW_DATA: New For Each(false,false)[bag]"];
+487399236 [label="UNION_TRAFFIC: Union[bag]"];
+487399235 [label="GROUP_UNION_TRAFFIC: Global Rearrange[tuple]"];
+1923940087 [label="RAW_DATA: Load(/2008-flight-data,\nPigStorage(','))", style="filled", fillcolor="gray"];
+487399150 [label="topMonthlyTraffic: Store(fakefile,\norg.apache.pig.builtin.PigStorage)", style="filled", fillcolor="gray"];
+487399213 [label="GROUP_UNION_TRAFFIC: Package(Packager)[tuple]{tuple}"];
+487399151 [label="topMonthlyTraffic: New For Each(true)[bag]"];
+487399212 [label="GROUP_UNION_TRAFFIC: Local Rearrange[tuple]{tuple}(false)"];
+487399275 [label="RAW_DATA: Filter[bag]"];
+487399334 [label="INBOUND: New For Each(false,false)[bag]"];
+487399333 [label="GROUP_INBOUND: Global Rearrange[tuple]"];
+487399269 [label="OUTBOUND: New For Each(false,false)[bag]"];
+487399266 [label="GROUP_OUTBOUND: Local Rearrange[tuple]{tuple}(false)"];
+487399332 [label="GROUP_INBOUND: Package(Packager)[tuple]{tuple}"];
+487399268 [label="GROUP_OUTBOUND: Global Rearrange[tuple]"];
+487399331 [label="GROUP_INBOUND: Local Rearrange[tuple]{tuple}(false)"];
+487399267 [label="GROUP_OUTBOUND: Package(Packager)[tuple]{tuple}"];
+487399182 -> 487399179
+487399181 -> 487399180
+487399180 -> 487399151
+487399179 -> 487399181
+487399302 -> 487399236
+487399237 -> 487399236
+487399368 -> 487399367
+487399367 -> 487399362
+487399367 -> 487399297
+487399362 -> 487399361
+487399361 -> 487399334
+487399297 -> 487399275
+487399236 -> 487399212
+487399235 -> 487399213
+1923940087 -> 487399368
+487399213 -> 487399182
+487399151 -> 487399150
+487399212 -> 487399235
+487399275 -> 487399269
+487399334 -> 487399331
+487399333 -> 487399332
+487399269 -> 487399266
+487399266 -> 487399268
+487399332 -> 487399302
+487399268 -> 487399267
+487399331 -> 487399333
+487399267 -> 487399237
+}
+

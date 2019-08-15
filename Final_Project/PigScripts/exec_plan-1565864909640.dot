@@ -1,0 +1,196 @@
+#--------------------------------------------------
+# Map Reduce Plan                                  
+#--------------------------------------------------
+digraph plan {
+compound=true;
+node [shape=rect];
+s487399149_in [label="", style=invis, height=0, width=0];
+s487399149_out [label="", style=invis, height=0, width=0];
+subgraph cluster_487399149 {
+label="Map - Combine - Reduce, Global Sort: false"; style="filled"; fillcolor="#EEEEEE"labelloc=b;
+s0_in [label="", style=invis, height=0, width=0];
+s0_out [label="", style=invis, height=0, width=0];
+subgraph cluster_0 {
+label="Map"; style="filled"; fillcolor="white"labelloc=b;
+2070489048 [label="Split"];
+2070488856 [label="Pre Combiner Local Rearrange[tuple]{Unknown}"];
+487399114 [label="COUNT_INBOUND: New For Each(false,false)[bag]"];
+2070488831 [label="GROUP_INBOUND: Local Rearrange[tuple]{tuple}(false)"];
+487399334 [label="INBOUND: New For Each(false,false)[bag]"];
+487399362 [label="RAW_DATA: New For Each(false,false)[bag]"];
+2070488856 -> 487399114
+487399114 -> 2070488831
+487399334 -> 2070488856
+487399362 -> 487399334
+2070489048 -> 487399362
+2070488986 [label="COUNT_OUTBOUND: New For Each(false,false)[bag]"];
+2070489018 [label="GROUP_OUTBOUND: Local Rearrange[tuple]{tuple}(false)"];
+487399269 [label="OUTBOUND: New For Each(false,false)[bag]"];
+2070489043 [label="Pre Combiner Local Rearrange[tuple]{Unknown}"];
+487399297 [label="RAW_DATA: New For Each(false,false)[bag]"];
+2070488986 -> 2070489018
+487399269 -> 2070489043
+2070489043 -> 2070488986
+487399297 -> 487399269
+2070489048 -> 487399297
+s2070489048_out [label="", style=invis, height=0, width=0];
+2070488831 -> s2070489048_out [style=invis];
+2070489018 -> s2070489048_out [style=invis];
+487399368 [label="RAW_DATA: New For Each(false,false,false)[bag]"];
+1923940087 [label="RAW_DATA: Load(/flight-data,\nPigStorage(','))", style="filled", fillcolor="gray"];
+487399368 -> 2070489048
+1923940087 -> 487399368
+s0_in -> 1923940087 [style=invis];
+};
+s2070489048_out -> s0_out [style=invis];
+s1_in [label="", style=invis, height=0, width=0];
+s1_out [label="", style=invis, height=0, width=0];
+subgraph cluster_1 {
+label="Combine"; style="filled"; fillcolor="white"labelloc=b;
+2070489073 [label="Package(MultiQueryPackager)[tuple]{tuple}"];
+2070489072 [label="Demux [2] scope-180"];
+2070488857 [label="GROUP_INBOUND: Local Rearrange[tuple]{tuple}(false)"];
+2070488824 [label="COUNT_INBOUND: New For Each(false,false)[bag]"];
+2070488824 -> 2070488857
+2070489072 -> 2070488824
+2070489011 [label="COUNT_OUTBOUND: New For Each(false,false)[bag]"];
+2070489044 [label="GROUP_OUTBOUND: Local Rearrange[tuple]{tuple}(false)"];
+2070489011 -> 2070489044
+2070489072 -> 2070489011
+s2070489072_out [label="", style=invis, height=0, width=0];
+2070488857 -> s2070489072_out [style=invis];
+2070489044 -> s2070489072_out [style=invis];
+2070489073 -> 2070489072
+s1_in -> 2070489073 [style=invis];
+};
+s2070489072_out -> s1_out [style=invis];
+s2_in [label="", style=invis, height=0, width=0];
+s2_out [label="", style=invis, height=0, width=0];
+subgraph cluster_2 {
+label="Reduce"; style="filled"; fillcolor="white"labelloc=b;
+2070489049 [label="Demux [2] scope-178"];
+487399120 [label="Store(hdfs://localhost:9000/tmp/temp-1776218291/tmp1188379337,\norg.apache.pig.impl.io.InterStorage)", style="filled", fillcolor="gray"];
+487399302 [label="COUNT_INBOUND: New For Each(true,false)[bag]"];
+487399302 -> 487399120
+2070489049 -> 487399302
+487399118 [label="Store(hdfs://localhost:9000/tmp/temp-1776218291/tmp-1105703311,\norg.apache.pig.impl.io.InterStorage)", style="filled", fillcolor="gray"];
+487399237 [label="COUNT_OUTBOUND: New For Each(true,false)[bag]"];
+487399237 -> 487399118
+2070489049 -> 487399237
+s2070489049_out [label="", style=invis, height=0, width=0];
+487399120 -> s2070489049_out [style=invis];
+487399118 -> s2070489049_out [style=invis];
+2070489050 [label="Package(MultiQueryPackager)[tuple]{tuple}"];
+2070489050 -> 2070489049
+s2_in -> 2070489050 [style=invis];
+};
+s2070489049_out -> s2_out [style=invis];
+s0_out -> s1_in [lhead=cluster_1]
+s1_out -> s2_in [lhead=cluster_2]
+s487399149_in -> s0_in [style=invis];
+};
+s2_out -> s487399149_out [style=invis];
+s487399115_in [label="", style=invis, height=0, width=0];
+s487399115_out [label="", style=invis, height=0, width=0];
+subgraph cluster_487399115 {
+label="Map - Combine - Reduce, Global Sort: false"; style="filled"; fillcolor="#EEEEEE"labelloc=b;
+s3_in [label="", style=invis, height=0, width=0];
+s3_out [label="", style=invis, height=0, width=0];
+subgraph cluster_3 {
+label="Map"; style="filled"; fillcolor="white"labelloc=b;
+2070488924 [label="topMonthlyTraffic: New For Each(false,false)[bag]"];
+487399116 [label="Load(hdfs://localhost:9000/tmp/temp-1776218291/tmp-1765853083,\norg.apache.pig.impl.io.InterStorage)", style="filled", fillcolor="gray"];
+2070488979 [label="TOTAL_MONTHLY: Local Rearrange[tuple]{int}(false)"];
+2070488982 [label="Pre Combiner Local Rearrange[tuple]{Unknown}"];
+2070488924 -> 2070488979
+487399116 -> 2070488982
+2070488982 -> 2070488924
+s3_in -> 487399116 [style=invis];
+};
+2070488979 -> s3_out [style=invis];
+s4_in [label="", style=invis, height=0, width=0];
+s4_out [label="", style=invis, height=0, width=0];
+subgraph cluster_4 {
+label="Combine"; style="filled"; fillcolor="white"labelloc=b;
+2070488957 [label="TOTAL_MONTHLY: Package(CombinerPackager)[tuple]{int}"];
+2070488951 [label="topMonthlyTraffic: New For Each(false,false)[bag]"];
+2070488983 [label="TOTAL_MONTHLY: Local Rearrange[tuple]{int}(false)"];
+2070488957 -> 2070488951
+2070488951 -> 2070488983
+s4_in -> 2070488957 [style=invis];
+};
+2070488983 -> s4_out [style=invis];
+s5_in [label="", style=invis, height=0, width=0];
+s5_out [label="", style=invis, height=0, width=0];
+subgraph cluster_5 {
+label="Reduce"; style="filled"; fillcolor="white"labelloc=b;
+487399150 [label="topMonthlyTraffic: Store(fakefile,\norg.apache.pig.builtin.PigStorage)", style="filled", fillcolor="gray"];
+487399151 [label="topMonthlyTraffic: New For Each(true)[bag]"];
+487399180 [label="TOTAL_MONTHLY: Package(CombinerPackager)[tuple]{int}"];
+487399151 -> 487399150
+487399180 -> 487399151
+s5_in -> 487399180 [style=invis];
+};
+487399150 -> s5_out [style=invis];
+s3_out -> s4_in [lhead=cluster_4]
+s4_out -> s5_in [lhead=cluster_5]
+s487399115_in -> s3_in [style=invis];
+};
+s5_out -> s487399115_out [style=invis];
+s487399143_in [label="", style=invis, height=0, width=0];
+s487399143_out [label="", style=invis, height=0, width=0];
+subgraph cluster_487399143 {
+label="Map - Combine - Reduce, Global Sort: false"; style="filled"; fillcolor="#EEEEEE"labelloc=b;
+s6_in [label="", style=invis, height=0, width=0];
+s6_out [label="", style=invis, height=0, width=0];
+subgraph cluster_6 {
+label="Map"; style="filled"; fillcolor="white"labelloc=b;
+487399119 [label="Load(hdfs://localhost:9000/tmp/temp-1776218291/tmp-1105703311,\norg.apache.pig.impl.io.InterStorage)", style="filled", fillcolor="gray"];
+2070488861 [label="TOTAL_TRAFFIC: New For Each(false,false)[bag]"];
+2070488894 [label="GROUP_UNION_TRAFFIC: Local Rearrange[tuple]{tuple}(false)"];
+487399142 [label="Load(hdfs://localhost:9000/tmp/temp-1776218291/tmp1188379337,\norg.apache.pig.impl.io.InterStorage)", style="filled", fillcolor="gray"];
+487399236 [label="UNION_TRAFFIC: Union[bag]"];
+2070488919 [label="Pre Combiner Local Rearrange[tuple]{Unknown}"];
+487399119 -> 487399236
+2070488861 -> 2070488894
+487399142 -> 487399236
+487399236 -> 2070488919
+2070488919 -> 2070488861
+s6_in -> 487399119 [style=invis];
+s6_in -> 487399142 [style=invis];
+};
+2070488894 -> s6_out [style=invis];
+s7_in [label="", style=invis, height=0, width=0];
+s7_out [label="", style=invis, height=0, width=0];
+subgraph cluster_7 {
+label="Combine"; style="filled"; fillcolor="white"labelloc=b;
+2070488920 [label="GROUP_UNION_TRAFFIC: Local Rearrange[tuple]{tuple}(false)"];
+2070488893 [label="GROUP_UNION_TRAFFIC: Package(CombinerPackager)[tuple]{tuple}"];
+2070488887 [label="TOTAL_TRAFFIC: New For Each(false,false)[bag]"];
+2070488893 -> 2070488887
+2070488887 -> 2070488920
+s7_in -> 2070488893 [style=invis];
+};
+2070488920 -> s7_out [style=invis];
+s8_in [label="", style=invis, height=0, width=0];
+s8_out [label="", style=invis, height=0, width=0];
+subgraph cluster_8 {
+label="Reduce"; style="filled"; fillcolor="white"labelloc=b;
+487399182 [label="TOTAL_TRAFFIC: New For Each(true,false)[bag]"];
+487399213 [label="GROUP_UNION_TRAFFIC: Package(CombinerPackager)[tuple]{tuple}"];
+487399117 [label="Store(hdfs://localhost:9000/tmp/temp-1776218291/tmp-1765853083,\norg.apache.pig.impl.io.InterStorage)", style="filled", fillcolor="gray"];
+487399182 -> 487399117
+487399213 -> 487399182
+s8_in -> 487399213 [style=invis];
+};
+487399117 -> s8_out [style=invis];
+s6_out -> s7_in [lhead=cluster_7]
+s7_out -> s8_in [lhead=cluster_8]
+s487399143_in -> s6_in [style=invis];
+};
+s8_out -> s487399143_out [style=invis];
+s487399149_out -> s487399143_in [lhead=cluster_487399143]
+s487399149_out -> s487399143_in [lhead=cluster_487399143]
+s487399143_out -> s487399115_in [lhead=cluster_487399115]
+}
+
